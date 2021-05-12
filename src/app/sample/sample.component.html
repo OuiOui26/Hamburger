@@ -1,0 +1,118 @@
+<h2 class="header1">BORGAR STORE</h2>
+<h2 class="header">{{BURGER}}</h2>
+<div class="buttons">
+    <button (click) = "addProduct(1)" class="button">Add Tomato</button>
+    <button (click) = "addProduct(2)" class="button">Add Pickles</button>
+    <button (click) = "addProduct(3)" class="button">Add Onions</button>
+    <button (click) = "addProduct(4)" class="button">Add Patty</button>
+
+
+</div>
+<div class="labels">
+<h2 class="text">ADD ONS</h2>
+<label class="text">$1 - Extra Tomato:</label><label class="text" id="tomato">0</label><br>
+<label class="text">$2 - Extra Pickles:</label><label class="text" id="pickles">0</label><br>
+<label class="text">$3 - Extra Onions:</label><label class="text" id="onions">0</label><br>
+<label class="text">$4 - Extra Patty:</label><label class="text" id="patty">0</label><br>
+</div>
+<div class="inputs">
+<label for=""> FINAL PAYMENT: $</label><input class="oof" type="text" disabled id = "final" value = 5><br>
+
+<label for="">AMOUNT TENDERED: $</label><input class="oof" type="text" id="payment" value = 0><button (click) = "calculatePayment()">PAY</button>
+</div>
+
+<style>
+
+ .header1{
+
+    padding-bottom: 20px;
+    background-color:tan;
+    text-align: center;
+    margin: 0cm;
+    font-weight: 1000;
+    height: 100px;
+    font-size: 105px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-style: italic;
+    font-family:fantasy;
+    border-bottom-width: 0;;
+    border-style: solid;
+    border-color: white;
+    border-left-width: 10px;
+    }
+    .header{
+    background-color:tan;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    border-bottom-width: 0cm;
+    border-left-width: 10px;
+    border-top-style: none;
+    border-top-width: 0;
+    border-style: solid;
+    border-color: white;
+
+    }
+    .buttons{
+        text-align: center;
+        background-color:seagreen;
+        padding-top: 10px;
+        margin-top: 0;
+        margin-bottom: 0cm;
+        border-color: white;
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 20px;
+    }
+    .button{
+        text-align: center;
+        margin-top: 5px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style:oblique;
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-color: white;
+        border-radius: 50px;
+        border-bottom: 0;
+    }
+    .labels{
+    text-align: center;
+    padding-top: 0cm;
+    margin-top: 0px;
+    background-color:saddlebrown;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    padding-bottom: 20px;
+    border-radius: 100px;
+    
+    }
+    .text{
+    color: seashell;
+        
+    }
+    .inputs
+    {
+    text-align: center;
+    background-color:tan;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size: 30px;
+    border-color: white;
+    border-style: solid;
+    border-width: 20px;
+
+    border-top-width: 0;
+    }
+    .oof{
+        height: 15px;
+        
+
+
+    }
+</style>
+
